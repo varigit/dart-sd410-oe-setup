@@ -1,0 +1,15 @@
+LCONF_VERSION = "6"
+
+BBPATH = "${TOPDIR}"
+BSPDIR := "${@os.path.abspath(os.path.dirname(d.getVar('FILE', True)) + '/../..')}"
+
+BBFILES ?= ""
+BBLAYERS = " \
+  ${BSPDIR}/sources/openembedded-core/meta \
+  \
+  ${BSPDIR}/sources/meta-openembedded/meta-oe \
+  ${BSPDIR}/sources/meta-openembedded/meta-gnome \
+  \
+  ${BSPDIR}/sources/meta-browser \
+  ${BSPDIR}/sources/meta-variscite \
+"
