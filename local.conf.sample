@@ -216,6 +216,17 @@ CORE_IMAGE_EXTRA_INSTALL += "\
     coreutils \
     gptfdisk \
     e2fsprogs-resize2fs \
+	packagegroup-base-wifi \
+    packagegroup-core-full-cmdline \
+    packagegroup-base-bluetooth \
+    iperf \
+    alsa-utils \
+    i2c-tools \
+    devmem2 \
+    dtc \
+    dtc-misc \
+    iproute2 \
+    iptables \
 "
 
 # default to systemd as init
